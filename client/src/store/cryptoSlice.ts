@@ -1,4 +1,3 @@
-// src/store/cryptoSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -27,7 +26,7 @@ export const fetchCryptoData = createAsyncThunk(
     const response = await axios.get(
       `http://localhost:4000/api/crypto/${symbol}`
     );
-    // console.log("Fetched Data:", response.data); // Add this line
+    // console.log("Fetched Data:", response.data); 
     return response.data;
   }
 );

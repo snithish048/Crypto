@@ -1,4 +1,3 @@
-// src/routes/cryptoRoutes.ts
 import express from 'express';
 import CryptoData from '../models/cryptoData';
 

@@ -1,4 +1,3 @@
-// src/models/CryptoData.ts
 import mongoose, { Schema, Document } from 'mongoose';
 
 interface ICryptoData extends Document {

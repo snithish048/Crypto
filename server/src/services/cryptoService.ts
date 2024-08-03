@@ -14,5 +14,5 @@ const fetchCryptoPrices = async () => {
 
 export const startCryptoPolling = () => {
   fetchCryptoPrices();
-  setInterval(fetchCryptoPrices, 10000000); // Fetch every 10000 seconds
+  setInterval(fetchCryptoPrices, 10000); // Fetch every 10 seconds
 };

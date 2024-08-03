@@ -1,4 +1,3 @@
-// src/pages/index.tsx
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchCryptoData, setSelectedSymbol } from "../store/cryptoSlice";
@@ -15,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      dispatch(fetchCryptoData(selectedSymbol)); // Change 'BTC' dynamically based on user selection
+      dispatch(fetchCryptoData(selectedSymbol)); 
     }, 5000); // Fetch every 5 seconds
     return () => clearInterval(interval);
   }, [dispatch, selectedSymbol]);
